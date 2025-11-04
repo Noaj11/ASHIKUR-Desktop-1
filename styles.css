@@ -487,16 +487,25 @@ line-height: 200%;
 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 20px;
 }
-
-.blog-image{
+.blog:hover{
+     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background: linear-gradient(151deg, #fc0 0%, #ffe476 98.84%);
+    transition: transform 0.2s ease;
+    transform: translateY(-37px);
+    }
+.blog-image {
     margin-right: 34px;
+     
+    
 }
+    
 .blog-image img {
     max-width: 100%;
 }
 .blog-text {
     padding: 20px 0;
 }
+    
 .blog-text p {
     font-weight: 400;
     font-size: 14px;
