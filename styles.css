@@ -360,59 +360,173 @@ line-height: 200%;
  
    
   }
-  .figma{
-    width: 85%;
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.skill-item p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-level {
+    float: right;
+    font-weight: bold;
+    color: #666;
+}
+
+.skill-bar {
+    background-color: #eee;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-figma {
     height: 100%;
-    background-color: #F16500;
-    border-radius: inherit;
-    position: relative;
+    background-color: rgba(241, 101, 0, 1); 
+}
+.skill-xd{
+  height: 100%;
+  background-color: rgba(112, 13, 96, 1);
+}
+.skill-adobeillustrator{
+  height: 100%;
+  background-color: rgba(239, 192, 3, 1);
+}
+.skill-adobephotoshop{
+  height: 100%;
+  background-color: rgba(3, 36, 155, 1);
+}
+#my-service{
+    background: #fff7d5;
+    padding: 100px 0;
+}
+.service-heading{}
+.service-heading h2{
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #353535;
+}
+.service-heading p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: center;
+    color: #7a7a7a;
+}
+.card-box {
+    text-align: center;
+    padding: 70px 40px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background: #fff;
+    border: none;
+    margin: 100px 0 0 0;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+}
+.card-box:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background: linear-gradient(151deg, #fc0 0%, #ffe476 98.84%);
+    transform: translateY(-37px);
+}
+.card-middle {
+    text-align: center;
+    padding: 70px 40px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background: #fff;
+    border: none;
+    margin: 100px 0 0 0;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+
+}
+.card-middle:hover {
+     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background: linear-gradient(151deg, #fc0 0%, #ffe476 98.84%);
+    transform: translateY(-37px);
+}
+
+.card-box img{
+    width: 88px;
+    margin: auto;
+    margin-bottom: 27px;
+}
+.card-box h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    text-align: center;
+    color: #353535;
+    margin-bottom: 20px;
+}
+.card-box p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: center;
+    color: #7a7a7a;
+}
+  #blog-section{
+    padding-bottom: 100px;
+}
+#blog-section .heading h2{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 135%;
+    text-align: right;
+    color: #353535;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.blog{
+    margin-bottom: 40px;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 20px;
+}
+
+.blog-image{
+    margin-right: 34px;
+}
+.blog-image img {
+    max-width: 100%;
+}
+.blog-text {
+    padding: 20px 0;
+}
+.blog-text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 190%;
+    color: #7a7a7a;
+    margin-right: 20px;
+}
+.blog-text span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 190%;
+    color: #353535;
+}
+.blog-text h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 188%;
+    color: #353535;
+    margin: 13px 0;
+    width: 80%;
+}
+.blog-text a{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 190%;
+    color: #353535;
+    display: inline-block;
+}
     
-  }
-  .figma .count{
-    position: absolute;
-    right: 0;
-    top: -25px;
-  }
-  .photoshop{
-    width: 75%;
-    height: 100%;
-    background-color: #03249B;
-    border-radius: inherit;
-    position: relative;
-    
-  }
-  .photoshop .count{
-    position: absolute;
-    right: 0;
-    top: -25px;
-    
-  }
-  .xd{
-     width: 80%;
-    height: 100%;
-    background-color: #700D60;
-    border-radius: inherit;
-    position: relative;
-  }
-  .xd .count{
-    position: absolute;
-    right: 0;
-    top: -25px;
-    
-  }
-  .illustrator{
-    width: 70%;
-    height: 100%;
-    background-color: #234BDA;
-    border-radius: inherit;
-    position: relative;
-  }
-  .illustrator .count{
-    position: absolute;
-    right: 0;
-    top: -25px;
-  }
-  #email{
+    #email{
     width: 455;
 height: 82;
 top: 7765px;
